@@ -163,7 +163,7 @@ margin: 0 80px;
 	left: 0;
 	right: 0;
 	background: rgba(0, 0, 0, 0.6);
-	visibility: hidden;
+	visibility: visible;
 	opacity: 10;
 }
 
@@ -191,8 +191,8 @@ margin: 0 80px;
   font-size: 18px;
   padding: 5px;
   margin: 20px auto;
-  width: 20%;
-  height: 15%;
+  width: 160px;
+  height: 30px;
   border-radius: 5px;
 }
 
@@ -214,6 +214,19 @@ margin: 0 80px;
   .score-panel .timer {
   margin: 0 50px;
   }
+  .message {
+    margin: 70px auto;
+  	padding: 60px;
+  	width: 80%;
+    height: 70%;
+  }
+  #check {
+    width: 60px;
+  }
+  .message .play-again {
+    width: 160px;
+    height: 30px;
+  }
 }
 
 /*media screen for tab devices */
@@ -227,5 +240,12 @@ margin: 0 80px;
       height: 125px;
       width: 125px;
       margin-bottom: 15px;
+  }
+  #check {
+    width: 60px;
+  }
+  .message .play-again {
+    width: 160px;
+    height: 30px;
   }
 }
