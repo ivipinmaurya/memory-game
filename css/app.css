@@ -132,7 +132,17 @@ h1 {
 .score-panel .stars li {
     list-style: none;
     display: inline-block;
-    color: gold;
+    color: #efcc12;
+}
+
+.finalStars li {
+    list-style: none;
+    display: inline-block;
+    color: #efcc12;
+}
+
+.finalStars {
+  display: inline-block;
 }
 
 .score-panel .restart {
@@ -142,5 +152,46 @@ h1 {
 
 .score-panel .timer {
 display: inline-block;
-margin: 0 85px;
+margin: 0 80px;
+}
+
+
+.show_msg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.6);
+	visibility: hidden;
+	opacity: 10;
+}
+
+.message {
+	margin: 90px auto;
+	padding: 100px;
+	background: #e6e6de;
+  font-family: "Georgia", serif;
+	border-radius: 5px;
+	width: 60%;
+  height: 70%;
+  text-align: center;
+	position: relative;
+}
+
+#check {
+  width: 15%;
+  border-radius: 800px;
+}
+
+.message .play-again {
+  cursor: pointer;
+  background: #02ccba;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  margin: 20px auto;
+  width: 20%;
+  height: 15%;
+  border-radius: 5px;
 }
