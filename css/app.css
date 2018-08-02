@@ -195,3 +195,37 @@ margin: 0 80px;
   height: 15%;
   border-radius: 5px;
 }
+
+/*media screen for mobile devices */
+@media screen and (max-width: 360px) {
+  .deck {
+      width: 95%;
+      min-height: inherit;
+      padding: 11px;
+  }
+  .deck .card {
+      height: 74px;
+      width: 74px;
+      margin-bottom: 8px;
+  }
+  .score-panel {
+      width: 300px;
+  }
+  .score-panel .timer {
+  margin: 0 50px;
+  }
+}
+
+/*media screen for tab devices */
+@media screen and (min-width: 361px) and (max-width: 768px) {
+  .deck {
+      width: 80%;
+      min-height: inherit;
+      padding: 25px;
+  }
+  .deck .card {
+      height: 125px;
+      width: 125px;
+      margin-bottom: 15px;
+  }
+}
