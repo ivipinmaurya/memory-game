@@ -1,7 +1,7 @@
 /*
  * Create a list that holds all of your cards
  */
- let a=0, openCard=[], cardChild=[], move=0, t, elements, newa, matchcount=0;
+ let a=0, openCard=[], cardChild=[], move=0, t, elements, newa, matchcount=0, minute=0, second=1;
  let element = document.getElementsByClassName('card');
 
 /*
@@ -107,7 +107,6 @@ if(move>30){
 };
 
 function startTimer(){
-  let minute=0, second=1;
 t = setInterval(function(){
         document.querySelector('.timer').innerHTML = minute+":"+second;
         second++;
@@ -151,9 +150,10 @@ document.querySelector('.show_msg').style.visibility = "visible";
 document.querySelector('.totalMoves').innerHTML = move/2;
 let visible = document.querySelectorAll('.finalStars li');
 if(move>25){
-    visible[2].style.visibility="hidden";
+    document.querySelector('.finalStars').innerHTML = 2;
 }
 if(move>30){
-  visible[1].style.visibility="hidden";
+  document.querySelector('.finalStars').innerHTML = 1;
 }
+document.querySelector('.timeTaken').innerHTML = minute+" Min "+second+" Sec";
 };
